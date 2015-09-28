@@ -1,1 +1,12 @@
-{{outlet}}
+<h1>{{model.title}}</h1>
+
+{{#each model.posts as |post|}}
+  {{#link-to 'post' post.id}}
+    <p>
+      {{post.title}} by {{post.author}}
+    </p>
+  {{/link-to}}
+{{/each}}
+
+
+{{new-post savePost="savePost" category=model}}

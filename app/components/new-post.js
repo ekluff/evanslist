@@ -11,6 +11,8 @@ export default Ember.Component.extend({
         author: this.get('author'),
         title: this.get('title'),
         body: this.get('body'),
+        category: this.get('category'),
+        date_added: Date.now()
       };
       this.set('addPostForm', false);
       this.sendAction('savePost', params);
