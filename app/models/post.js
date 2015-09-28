@@ -6,5 +6,4 @@ export default DS.Model.extend({
   body: DS.attr(),
   category: DS.belongsTo('category', {async: true}),
   comments: DS.hasMany('comment', {async: true})
-
 });

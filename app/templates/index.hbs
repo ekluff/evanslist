@@ -1,7 +1,5 @@
 {{#each model as |category|}}
-
+    {{#link-to 'category' category.id}}
     {{category-tile category=category}}
-
+    {{/link-to}}
 {{/each}}
-
-HELLO WORLDS

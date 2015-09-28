@@ -1,3 +1,11 @@
+{{#each model as |category|}}
+    {{#link-to 'category' category.id}}
+    {{category-tile category=category}}
+    {{/link-to}}
+{{/each}}
+
+
+
 {{category.title}}
 
 <!-- The following should go on individual category pages. -->
@@ -11,6 +19,3 @@
   {{post.author}}
   {{/link-to}}
 {{/each}} -->
-
-
-HELLO CATEGORY
