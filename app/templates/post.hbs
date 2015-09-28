@@ -1,0 +1,13 @@
+{{model.author}}
+{{model.title}}
+{{model.body}}
+
+<a class='btn btn-large' {{action 'deletePost' model}}>
+  <button type="button">DELETE</button></a>
+{{edit-post post=model editPost='editPost'}}
+{{new-comment post=model saveComment='saveComment'}}
+
+{{#each model.comments as |comment|}}
+  {{comment.body}}
+  {{comment.author}}
+{{/each}}

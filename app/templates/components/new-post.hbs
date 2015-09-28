@@ -1,0 +1,25 @@
+{{#if addPostForm}}
+<h1>New Post</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author Name</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Body</label>
+        {{input value=body id="body"}}
+      </div>
+
+      <button {{action 'savePost'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'showPostForm'}}>New Post</button>
+{{/if}}
