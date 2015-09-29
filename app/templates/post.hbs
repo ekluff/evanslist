@@ -13,6 +13,7 @@
 {{format-date model.date_added}}
 
 <a class='btn btn-large' {{action 'deletePost' model}}>
+  <br>
   <button type="button">DELETE</button></a>
 {{edit-post post=model editPost='editPost'}}
 {{new-comment post=model saveComment='saveComment'}}

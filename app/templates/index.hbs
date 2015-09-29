@@ -1,11 +1,59 @@
 <div id="body-container">
+  <table style="width:100%">
+    <tr>
+      {{#each model as |category|}}
+        <th>
+          {{#link-to 'category' category.id}}
+            {{category-tile category=category}}
+          {{/link-to}}
+        </th>
+      {{/each}}
+    </tr>
+    {{#each model as |category|}}
+      <td>
+        {{#each category.posts as |post|}}
+          <tr>
+            <td>
+              {{#link-to 'post' post.id}}
+                {{post.title}}
+              {{/link-to}}
+            </td>
+          </tr>
+        {{/each}}
+      </td>
+    {{/each}}
+  </table>
 
-  {{#each model as |category|}}
-      {{#link-to 'category' category.id}}
-        {{category-tile category=category}}
-      {{/link-to}}
-  {{/each}}
+  <br>
+  <br>
+  <br>
+  <br>
 
   {{new-category saveCategory="saveCategory"}}
 
 </div>
+
+
+<!--
+<style>
+table, th, td {
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+<tr>
+<td>January</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>February</td>
+<td>$80</td>
+</tr>
+</table> -->
