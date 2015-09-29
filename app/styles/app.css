@@ -1,0 +1,29 @@
+#sidebar {
+  float: left;
+  background-color: #f4f4f4;
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  border-right: 1px #ccc solid;
+  border-left: 1px #ccc solid;
+  min-height: 860px;
+}
+
+#body-container {
+  float: left;
+  width: 62%;
+  margin: 2%;
+  padding: 0;
+}
+
+.header-main {
+  float: right;
+  background-color: #eee;
+  width: 62%;
+  margin: 0 15.8% 0 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
