@@ -1,7 +1,6 @@
 # Craiglist
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This simple ember web app was inspired by the classifieds site Craigslist. On the index page it lists titles of categories and the titles of the posts associated with each category. Clicking on a post or category title will take you to a page that displays the details of that post or category.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ekluff/evanslist` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -39,10 +38,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -50,4 +45,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
